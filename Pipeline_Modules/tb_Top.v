@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/24/2021 01:24:08 AM
+// Create Date: 09/20/2021 02:04:56 AM
 // Design Name: 
 // Module Name: tb_Top
 // Project Name: 
@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+
 module tb_Top();
 
 reg CLK, RST;
@@ -30,16 +31,15 @@ wire [31 : 0] DM [0 : 399] = Data_Mem.mem;
 Top DUT(.CLK(CLK),.RST(RST));
 
 initial begin
-    //CLK <= 0;
-    forever #5 CLK <= ~CLK;
+    CLK <= 0;
+    forever #10 CLK <= ~CLK;
 end
 
 initial begin
-CLK <= 0;
- RST <= 1;
- #3;
- RST <= 0;
- #4000;
+ RST = 1;
+ #10;
+ RST = 0;
+ #800;
  $stop;
  end
  
