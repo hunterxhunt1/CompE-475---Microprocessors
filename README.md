@@ -25,6 +25,7 @@ LW $t3 3($0),
 LW $t4 4($0) 
  
 (b) MIPS program with load word and store word instructions only  
+
 LW $t0 0($0), 
 LW $t1 1($0), 
 LW $t2 2($0), 
@@ -37,6 +38,7 @@ SW $t3 34($0),
 SW $t4 35($0) 
  
 (c) MIPS program with LW, SW and R-Type instructions only 
+
 LW $t0 0($0), 
 LW $t1 1($0), 
 LW $t2 2($0), 
@@ -50,6 +52,7 @@ SW $s0 32($0),
 SW $s1 -1($s3) 
 
 (d) MIPS program with LW, SW, R-Type and I-Type instructions only 
+
 ADDI $t5, $0, 5, 
 ADDI $t6, $t5, -3, 
 LW $t0 0($0), 
@@ -67,6 +70,7 @@ SW $s1, 0($s3),
 SW $s1, 0($s4) 
  
 (e) MIPS program with aLL instruction types, including Branch/Jump 
+
 ADDI $s0, $0, 0 ,
 ADDI $s1, $0, 5 ,
 ADDI $s2, $0, 1 ,
