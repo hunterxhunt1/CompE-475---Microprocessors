@@ -13,7 +13,8 @@ We were tasked to design a single-cycle microarchetecture, that can execute one 
 
 # MIPS INSTRUCTIONS 
 (a) MIPS program with load word instructions only 
-LW $t0 0($0) 
+
+LW $t0 0($0)
 LW $t1 1($0) 
 LW $t2 2($0) 
 LW $t3 3($0) 
